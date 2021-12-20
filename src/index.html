@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Cadastro de Alunos</title>
 </head>
 <body>
 <h1>Cadastro de Alunos</h1>
-<div id="formulario">
-    <label for="nome">Nome:</label>
-    <input type="text" name="nome" id="nome">
-    <label for="telefone">Telefone</label>
-    <input type="tel" name="telefone" id="telefone">
-    <label for="dataNascimento">Data de Nascimento</label>
-    <input type="date" name="dataNascimento" id="dataNascimento">
-    <label for="notaFinal">Nota</label>
-    <input type="number" name="notaFinal" id="notaFinal">
-    <button name="cadastra" id="btnCadastra">Cadastra</button>
-    <button name="cadastra" id="btnSalva">Salva Alteração</button>
 
+<div id="formulario">
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
+    </div>
+    <div class="form-group">
+        <label for="telefone">Telefone</label>
+        <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
+    </div>
+    <div class="form-group">
+        <label for="dataNascimento">Data de Nascimento</label>
+        <input type="date" class="form-control" id="dataNascimento" name="dataNascimento" placeholder="Data de Nascimento">
+    </div>
+    <div class="form-group">
+        <label for="notaFinal">Nota Final</label>
+        <input type="number" class="form-control" id="notaFinal" name="notaFinal" placeholder="Nota Final">
+    </div>
+    <button id = "btnCadastra" class="btn btn-primary">Cadastrar</button>
+    <button id = "btnSalva" class="btn btn-primary">Cadastrar</button>
 </div>
 <div id="listaAlunos">
     <table>
