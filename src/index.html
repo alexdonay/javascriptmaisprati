@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cadastro de Alunos</title>
+</head>
+<body>
+<h1>Cadastro de Alunos</h1>
+<div id="formulario">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome">
+    <label for="telefone">Telefone</label>
+    <input type="tel" name="telefone" id="telefone">
+    <label for="dataNascimento">Data de Nascimento</label>
+    <input type="date" name="dataNascimento" id="dataNascimento">
+    <label for="notaFinal">Nota</label>
+    <input type="number" name="notaFinal" id="notaFinal">
+    <button name="cadastra" id="btnCadastra">Cadastra</button>
+    <button name="cadastra" id="btnSalva">Salva Alteração</button>
+
+</div>
+<div id="listaAlunos">
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Data de Nascimento</th>
+            <th>Nota</th>
+            <th>Exclui</th>
+            <th>Atualiza</th>
+        </tr>
+        </thead>
+        <tbody id="tabela">
+           
+        </tbody>
+    </table>
+</div>
+    
+<h2 id="mensagem"></h2>
+</body>
+<script src="script.js"></script>
+</html>
